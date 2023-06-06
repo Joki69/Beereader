@@ -5,45 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DBA00B"
-    tools:context=".Library"
+    tools:context=".Browse"
     tools:layout_editor_absoluteX="-4dp"
     tools:layout_editor_absoluteY="291dp">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="145dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="133dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Library"
+        android:text="Popular"
         android:textColor="#362703"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintEnd_toStartOf="@+id/imageView22"
+        app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView22"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="4dp"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/narutonen"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cicuclofoto" />
-
-    <ImageView
-        android:id="@+id/imageView21"
-        android:layout_width="47dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/perfilpokemon" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:id="@+id/scrollView6"
@@ -60,6 +52,7 @@
             android:paddingBottom="200dp">
 
             <TextView
+                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur."
@@ -76,7 +69,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/imageView6"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/claymore" />
+                app:srcCompat="@drawable/dgrayman" />
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -90,7 +83,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/imageView6"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/berserk" />
+                app:srcCompat="@drawable/demonking" />
 
             <ImageView
                 android:id="@+id/imageView6"
@@ -103,7 +96,7 @@
                 app:layout_constraintStart_toEndOf="@+id/imageView2"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/chainsawman" />
+                app:srcCompat="@drawable/sololvling" />
 
             <ImageView
                 android:id="@+id/imageView7"
@@ -113,7 +106,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/imageView5"
                 app:layout_constraintStart_toEndOf="@+id/imageView10"
                 app:layout_constraintTop_toBottomOf="@+id/imageView5"
-                app:srcCompat="@drawable/demonking" />
+                app:srcCompat="@drawable/berserk" />
 
             <ImageView
                 android:id="@+id/imageView8"
@@ -123,10 +116,10 @@
                 app:layout_constraintEnd_toStartOf="@+id/imageView20"
                 app:layout_constraintStart_toStartOf="@+id/imageView11"
                 app:layout_constraintTop_toBottomOf="@+id/imageView11"
-                app:srcCompat="@drawable/naruto" />
+                app:srcCompat="@drawable/claymore" />
 
             <ImageView
-                android:id="@+id/imageView9"
+                android:id="@+id/chainsawPortadaBrowse"
                 android:layout_width="111dp"
                 android:layout_height="153dp"
                 android:layout_marginEnd="1dp"
@@ -135,7 +128,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/imageView12"
                 app:layout_constraintStart_toEndOf="@+id/imageView13"
                 app:layout_constraintTop_toBottomOf="@+id/imageView18"
-                app:srcCompat="@drawable/devilman" />
+                app:srcCompat="@drawable/chainsawman" />
 
             <ImageView
                 android:id="@+id/imageView10"
@@ -146,7 +139,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/imageView7"
                 app:layout_constraintStart_toEndOf="@+id/imageView11"
                 app:layout_constraintTop_toBottomOf="@+id/imageView6"
-                app:srcCompat="@drawable/devilpartner" />
+                app:srcCompat="@drawable/ubelblatt" />
 
             <ImageView
                 android:id="@+id/imageView11"
@@ -157,14 +150,14 @@
                 app:layout_constraintEnd_toStartOf="@+id/imageView10"
                 app:layout_constraintStart_toStartOf="@+id/imageView2"
                 app:layout_constraintTop_toBottomOf="@+id/imageView2"
-                app:srcCompat="@drawable/dgrayman" />
+                app:srcCompat="@drawable/devilpartner" />
 
             <ImageView
                 android:id="@+id/imageView12"
-                android:layout_width="111dp"
-                android:layout_height="153dp"
+                android:layout_width="107dp"
+                android:layout_height="148dp"
                 app:layout_constraintEnd_toEndOf="@+id/imageView19"
-                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintStart_toEndOf="@+id/chainsawPortadaBrowse"
                 app:layout_constraintTop_toBottomOf="@+id/imageView19"
                 app:srcCompat="@drawable/gantz" />
 
@@ -173,7 +166,7 @@
                 android:layout_width="111dp"
                 android:layout_height="153dp"
                 app:layout_constraintBottom_toTopOf="@+id/imageView17"
-                app:layout_constraintEnd_toStartOf="@+id/imageView9"
+                app:layout_constraintEnd_toStartOf="@+id/chainsawPortadaBrowse"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/imageView16"
                 app:layout_constraintTop_toBottomOf="@+id/imageView16"
@@ -207,7 +200,7 @@
                 android:id="@+id/imageView17"
                 android:layout_width="111dp"
                 android:layout_height="153dp"
-                app:layout_constraintEnd_toStartOf="@+id/imageView9"
+                app:layout_constraintEnd_toStartOf="@+id/chainsawPortadaBrowse"
                 app:layout_constraintStart_toStartOf="@+id/imageView13"
                 app:layout_constraintTop_toBottomOf="@+id/imageView13"
                 app:srcCompat="@drawable/koreanwars" />
@@ -216,11 +209,11 @@
                 android:id="@+id/imageView18"
                 android:layout_width="111dp"
                 android:layout_height="153dp"
-                app:layout_constraintBottom_toTopOf="@+id/imageView9"
+                app:layout_constraintBottom_toTopOf="@+id/chainsawPortadaBrowse"
                 app:layout_constraintEnd_toStartOf="@+id/imageView19"
                 app:layout_constraintStart_toEndOf="@+id/imageView16"
                 app:layout_constraintTop_toBottomOf="@+id/imageView20"
-                app:srcCompat="@drawable/sololvling" />
+                app:srcCompat="@drawable/naruto" />
 
             <ImageView
                 android:id="@+id/imageView19"
@@ -242,18 +235,20 @@
                 app:layout_constraintEnd_toStartOf="@+id/imageView15"
                 app:layout_constraintStart_toEndOf="@+id/imageView8"
                 app:layout_constraintTop_toBottomOf="@+id/imageView10"
-                app:srcCompat="@drawable/ubelblatt" />
+                app:srcCompat="@drawable/devilman" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+
     <ImageView
-        android:id="@+id/imageView27"
+        android:id="@+id/otherBrowse"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView26"
+        app:layout_constraintStart_toEndOf="@+id/browseChain"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.978"
         app:srcCompat="@drawable/puntosnegros" />
@@ -265,9 +260,9 @@
         android:text="Other"
         android:textSize="10sp"
         android:textColor="#362703"
-        app:layout_constraintEnd_toEndOf="@+id/imageView27"
-        app:layout_constraintStart_toStartOf="@+id/imageView27"
-        app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+        app:layout_constraintEnd_toEndOf="@+id/otherBrowse"
+        app:layout_constraintStart_toStartOf="@+id/otherBrowse"
+        app:layout_constraintTop_toBottomOf="@+id/otherBrowse" />
 
     <TextView
         android:id="@+id/textView28"
@@ -276,9 +271,9 @@
         android:text="Updates"
         android:textColor="#362703"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView23"
-        app:layout_constraintStart_toStartOf="@+id/imageView23"
-        app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+        app:layout_constraintEnd_toEndOf="@+id/updateBrowse"
+        app:layout_constraintStart_toStartOf="@+id/updateBrowse"
+        app:layout_constraintTop_toBottomOf="@+id/updateBrowse" />
 
     <TextView
         android:id="@+id/textView29"
@@ -287,20 +282,20 @@
         android:text="History"
         android:textColor="#362703"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView25"
-        app:layout_constraintStart_toStartOf="@+id/imageView25"
-        app:layout_constraintTop_toBottomOf="@+id/imageView25" />
+        app:layout_constraintEnd_toEndOf="@+id/historyBrowse"
+        app:layout_constraintStart_toStartOf="@+id/historyBrowse"
+        app:layout_constraintTop_toBottomOf="@+id/historyBrowse" />
 
     <TextView
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Browse"
+        android:text="Popular"
         android:textColor="#362703"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView26"
-        app:layout_constraintStart_toStartOf="@+id/imageView26"
-        app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+        app:layout_constraintEnd_toEndOf="@+id/browseChain"
+        app:layout_constraintStart_toStartOf="@+id/browseChain"
+        app:layout_constraintTop_toBottomOf="@+id/browseChain" />
 
     <TextView
         android:id="@+id/textView30"
@@ -309,34 +304,34 @@
         android:text="Library"
         android:textColor="#362703"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView24"
-        app:layout_constraintStart_toStartOf="@+id/imageView24"
-        app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+        app:layout_constraintEnd_toEndOf="@+id/libraryBrowse"
+        app:layout_constraintStart_toStartOf="@+id/libraryBrowse"
+        app:layout_constraintTop_toBottomOf="@+id/libraryBrowse" />
 
     <ImageView
-        android:id="@+id/imageView25"
+        android:id="@+id/historyBrowse"
         android:layout_width="30dp"
         android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView26"
-        app:layout_constraintStart_toEndOf="@+id/imageView23"
+        app:layout_constraintEnd_toStartOf="@+id/browseChain"
+        app:layout_constraintStart_toEndOf="@+id/updateBrowse"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
         app:srcCompat="@drawable/relojnegro" />
 
     <ImageView
-        android:id="@+id/imageView23"
+        android:id="@+id/updateBrowse"
         android:layout_width="30dp"
         android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView25"
-        app:layout_constraintStart_toEndOf="@+id/imageView24"
+        app:layout_constraintEnd_toStartOf="@+id/historyBrowse"
+        app:layout_constraintStart_toEndOf="@+id/libraryBrowse"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
         app:srcCompat="@drawable/updatenegro" />
 
     <ImageView
-        android:id="@+id/imageView24"
+        android:id="@+id/libraryBrowse"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="28dp"
@@ -344,18 +339,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
-        app:srcCompat="@drawable/libraryblanco" />
+        app:srcCompat="@drawable/librerianegra" />
 
     <ImageView
-        android:id="@+id/imageView26"
+        android:id="@+id/browseChain"
         android:layout_width="30dp"
         android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView27"
-        app:layout_constraintStart_toEndOf="@+id/imageView25"
+        app:layout_constraintEnd_toStartOf="@+id/otherBrowse"
+        app:layout_constraintStart_toEndOf="@+id/historyBrowse"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
-        app:srcCompat="@drawable/brujulanegra" />
+        app:srcCompat="@drawable/brujulablanca" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -23,27 +23,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView22"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="4dp"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/narutonen"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintHorizontal_bias="0.912"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cicuclofoto" />
-
-    <ImageView
-        android:id="@+id/imageView21"
-        android:layout_width="47dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/perfilpokemon" />
+        app:layout_constraintTop_toTopOf="parent" />
     <ScrollView
         android:id="@+id/scrollView6"
         android:layout_width="345dp"
@@ -242,9 +233,9 @@
                 app:srcCompat="@drawable/dgrayman" />
 
             <ImageView
-                android:id="@+id/imageView13"
-                android:layout_width="84dp"
-                android:layout_height="118dp"
+                android:id="@+id/chainsawPortadaupdate"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
                 app:layout_constraintStart_toStartOf="@+id/imageView16"
                 app:layout_constraintTop_toBottomOf="@+id/textView7"
                 app:srcCompat="@drawable/chainsawman" />
@@ -261,8 +252,8 @@
                 android:id="@+id/imageView17"
                 android:layout_width="84dp"
                 android:layout_height="118dp"
-                app:layout_constraintStart_toStartOf="@+id/imageView13"
-                app:layout_constraintTop_toBottomOf="@+id/imageView13"
+                app:layout_constraintStart_toStartOf="@+id/chainsawPortadaupdate"
+                app:layout_constraintTop_toBottomOf="@+id/chainsawPortadaupdate"
                 app:srcCompat="@drawable/koreanwars" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -270,24 +261,24 @@
 
 
     <ImageView
-        android:id="@+id/imageView27"
+        android:id="@+id/otherUpdates"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView26"
+        app:layout_constraintStart_toEndOf="@+id/browseUpdate"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.978"
         app:srcCompat="@drawable/puntosnegros" />
 
     <ImageView
-        android:id="@+id/imageView25"
+        android:id="@+id/historyUpdate"
         android:layout_width="30dp"
         android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView26"
-        app:layout_constraintStart_toEndOf="@+id/imageView23"
+        app:layout_constraintEnd_toStartOf="@+id/browseUpdate"
+        app:layout_constraintStart_toEndOf="@+id/updateChainComents"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
         app:srcCompat="@drawable/relojnegro" />
@@ -299,9 +290,9 @@
         android:text="Other"
         android:textColor="#362703"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView27"
-        app:layout_constraintStart_toStartOf="@+id/imageView27"
-        app:layout_constraintTop_toBottomOf="@+id/imageView27"
+        app:layout_constraintEnd_toEndOf="@+id/otherUpdates"
+        app:layout_constraintStart_toStartOf="@+id/otherUpdates"
+        app:layout_constraintTop_toBottomOf="@+id/otherUpdates"
         tools:ignore="TextSizeCheck" />
 
     <TextView
@@ -311,9 +302,9 @@
         android:text="Updates"
         android:textColor="#362703"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView23"
-        app:layout_constraintStart_toStartOf="@+id/imageView23"
-        app:layout_constraintTop_toBottomOf="@+id/imageView23"
+        app:layout_constraintEnd_toEndOf="@+id/updateChainComents"
+        app:layout_constraintStart_toStartOf="@+id/updateChainComents"
+        app:layout_constraintTop_toBottomOf="@+id/updateChainComents"
         tools:ignore="TextSizeCheck" />
 
     <TextView
@@ -323,21 +314,21 @@
         android:text="History"
         android:textColor="#362703"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView25"
-        app:layout_constraintStart_toStartOf="@+id/imageView25"
-        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:layout_constraintEnd_toEndOf="@+id/historyUpdate"
+        app:layout_constraintStart_toStartOf="@+id/historyUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/historyUpdate"
         tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Browse"
+        android:text="Pupular"
         android:textColor="#362703"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView26"
-        app:layout_constraintStart_toStartOf="@+id/imageView26"
-        app:layout_constraintTop_toBottomOf="@+id/imageView26"
+        app:layout_constraintEnd_toEndOf="@+id/browseUpdate"
+        app:layout_constraintStart_toStartOf="@+id/browseUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/browseUpdate"
         tools:ignore="TextSizeCheck" />
 
     <TextView
@@ -347,24 +338,24 @@
         android:text="Library"
         android:textColor="#362703"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView24"
-        app:layout_constraintStart_toStartOf="@+id/imageView24"
-        app:layout_constraintTop_toBottomOf="@+id/imageView24"
+        app:layout_constraintEnd_toEndOf="@+id/libraryUpdate"
+        app:layout_constraintStart_toStartOf="@+id/libraryUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/libraryUpdate"
         tools:ignore="TextSizeCheck" />
 
     <ImageView
-        android:id="@+id/imageView23"
+        android:id="@+id/updateChainComents"
         android:layout_width="30dp"
         android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView25"
-        app:layout_constraintStart_toEndOf="@+id/imageView24"
+        app:layout_constraintEnd_toStartOf="@+id/historyUpdate"
+        app:layout_constraintStart_toEndOf="@+id/libraryUpdate"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
         app:srcCompat="@drawable/updateblanco" />
 
     <ImageView
-        android:id="@+id/imageView24"
+        android:id="@+id/libraryUpdate"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="28dp"
@@ -375,12 +366,12 @@
         app:srcCompat="@drawable/librerianegra" />
 
     <ImageView
-        android:id="@+id/imageView26"
+        android:id="@+id/browseUpdate"
         android:layout_width="30dp"
         android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView27"
-        app:layout_constraintStart_toEndOf="@+id/imageView25"
+        app:layout_constraintEnd_toStartOf="@+id/otherUpdates"
+        app:layout_constraintStart_toEndOf="@+id/historyUpdate"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976"
         app:srcCompat="@drawable/brujulanegra" />

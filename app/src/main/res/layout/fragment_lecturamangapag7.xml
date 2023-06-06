@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DBA00B"
-    tools:context=".lecturamanga2">
+    tools:context=".lecturamanga7">
 
 
     <TextView
@@ -32,7 +32,7 @@
         android:gravity="center"
         android:padding="8dp"
         android:background="#362703"
-        android:text="Chapter 1"
+        android:text="Chapter 2"
         android:textSize="14sp"
         android:textColor="#DBA00B"
         app:layout_constraintBottom_toBottomOf="@+id/mangaNameTextView"
@@ -43,7 +43,7 @@
 
 
     <ImageView
-        android:id="@+id/previousButton"
+        android:id="@+id/previousButton7"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="576dp"
@@ -64,7 +64,7 @@
         android:text="Siguiente"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/previousButton"
+        app:layout_constraintStart_toEndOf="@+id/previousButton7"
         app:layout_constraintTop_toBottomOf="@+id/chapterNumberTextView"
         app:layout_constraintVertical_bias="0.833"
         app:srcCompat="@drawable/reondaconflechanaranja" />
@@ -93,13 +93,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/previousButton"
+        app:layout_constraintStart_toEndOf="@+id/previousButton7"
         app:layout_constraintTop_toBottomOf="@+id/chapterNumberTextView"
         app:layout_constraintVertical_bias="0.62"
         app:srcCompat="@drawable/flechanaranja" />
 
     <ImageView
-        android:id="@+id/closeButton"
+        android:id="@+id/closeButton7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -110,17 +110,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/flechanaranja" />
 
-    <ImageView
+    <TextView
         android:id="@+id/mangaframe"
-        android:layout_width="wrap_content"
-        android:layout_height="365dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#362703"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Coming soon"
+        android:textColor="#DBA00B"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.551"
-        app:srcCompat="@drawable/dos" />
+        app:layout_constraintVertical_bias="0.53"
+        app:srcCompat="@drawable/seis" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

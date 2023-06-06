@@ -13,7 +13,7 @@ import androidx.navigation.Navigation;
 
 import org.jetbrains.annotations.Nullable;
 
-public class lecturamanga6 extends Fragment {
+public class lecturamanga7 extends Fragment {
 
     ImageView previous;
 
@@ -33,7 +33,7 @@ public class lecturamanga6 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_lecturamangapag6, container, false);
+        return inflater.inflate(R.layout.fragment_lecturamangapag7, container, false);
     }
 
     @Override
@@ -42,28 +42,23 @@ public class lecturamanga6 extends Fragment {
 
         navController = Navigation.findNavController(view);
 
-        next = view.findViewById(R.id.nextButton6);
-        previous = view.findViewById(R.id.previousButtonflecha6);
-        atras = view.findViewById(R.id.closeButton6);
+
+        previous = view.findViewById(R.id.previousButton7);
+        atras = view.findViewById(R.id.closeButton7);
 
 
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.action_lecturamanga6_to_lecturamanga7);
-            }
-        });
+
         previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_lecturamanga6_to_lecturamanga5);
+                navController.navigate(R.id.action_lecturamanga7_to_lecturamanga6);
             }
         });
 
         atras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_lecturamanga6_to_chainsawfragment);
+                navController.navigate(R.id.action_lecturamanga7_to_chainsawfragment);
             }
         });
     }

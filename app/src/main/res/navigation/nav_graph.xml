@@ -9,10 +9,288 @@
         android:id="@+id/welcomePage"
         android:name="com.example.beereader.WelcomePage"
         android:label="fragment_welcome_page"
-        tools:layout="@layout/fragment_welcome_page" />
-    <activity
+        tools:layout="@layout/fragment_welcome_page" >
+        <action
+            android:id="@+id/action_welcomePage_to_library"
+            app:destination="@id/library" />
+        <action
+            android:id="@+id/action_welcomePage_to_signin"
+            app:destination="@id/signin" />
+    </fragment>
+    <fragment
+        android:id="@+id/library"
+        android:name="com.example.beereader.Library"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library" >
+        <action
+            android:id="@+id/action_library_to_updates"
+            app:destination="@id/updates" />
+        <action
+            android:id="@+id/action_library_to_history"
+            app:destination="@id/history" />
+        <action
+            android:id="@+id/action_library_to_browse"
+            app:destination="@id/browse" />
+        <action
+            android:id="@+id/action_library_to_more"
+            app:destination="@id/more" />
+        <action
+            android:id="@+id/action_library_to_chainsawfragment"
+            app:destination="@id/chainsawfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signin"
+        android:name="com.example.beereader.Signin"
+        android:label="fragment_signin"
+        tools:layout="@layout/fragment_signin" >
+        <action
+            android:id="@+id/action_signin_to_library"
+            app:destination="@id/library" />
+    </fragment>
+    <fragment
+        android:id="@+id/updates"
+        android:name="com.example.beereader.Updates"
+        android:label="fragment_updates"
+        tools:layout="@layout/fragment_updates" >
+        <action
+            android:id="@+id/action_updates_to_library"
+            app:destination="@id/library" />
+        <action
+            android:id="@+id/action_updates_to_history"
+            app:destination="@id/history" />
+        <action
+            android:id="@+id/action_updates_to_browse"
+            app:destination="@id/browse" />
+        <action
+            android:id="@+id/action_updates_to_more"
+            app:destination="@id/more" />
+        <action
+            android:id="@+id/action_updates_to_chainsawfragment"
+            app:destination="@id/chainsawfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/more"
+        android:name="com.example.beereader.More"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" >
+        <action
+            android:id="@+id/action_more_to_library"
+            app:destination="@id/library" />
+        <action
+            android:id="@+id/action_more_to_updates"
+            app:destination="@id/updates" />
+        <action
+            android:id="@+id/action_more_to_history"
+            app:destination="@id/history" />
+        <action
+            android:id="@+id/action_more_to_browse"
+            app:destination="@id/browse" />
+        <action
+            android:id="@+id/action_more_to_welcomePage"
+            app:destination="@id/welcomePage" />
+    </fragment>
+    <fragment
         android:id="@+id/history"
         android:name="com.example.beereader.History"
-        android:label="history"
-        tools:layout="@layout/history" />
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_history_to_library"
+            app:destination="@id/library" />
+        <action
+            android:id="@+id/action_history_to_updates"
+            app:destination="@id/updates" />
+        <action
+            android:id="@+id/action_history_to_browse"
+            app:destination="@id/browse" />
+        <action
+            android:id="@+id/action_history_to_more"
+            app:destination="@id/more" />
+        <action
+            android:id="@+id/action_history_to_chainsawfragment"
+            app:destination="@id/chainsawfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/browse"
+        android:name="com.example.beereader.Browse"
+        android:label="fragment_browse"
+        tools:layout="@layout/fragment_browse" >
+        <action
+            android:id="@+id/action_browse_to_library"
+            app:destination="@id/library" />
+        <action
+            android:id="@+id/action_browse_to_updates"
+            app:destination="@id/updates" />
+        <action
+            android:id="@+id/action_browse_to_history"
+            app:destination="@id/history" />
+        <action
+            android:id="@+id/action_browse_to_more"
+            app:destination="@id/more" />
+        <action
+            android:id="@+id/action_browse_to_chainsawfragment"
+            app:destination="@id/chainsawfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chainsawfragment"
+        android:name="com.example.beereader.Chainsawfragment"
+        android:label="fragment_chainsawfragment"
+        tools:layout="@layout/fragment_chainsawfragment" >
+        <action
+            android:id="@+id/action_chainsawfragment_to_chainsawfragmentComents"
+            app:destination="@id/chainsawfragmentComents" />
+        <action
+            android:id="@+id/action_chainsawfragment_to_lecturamanga"
+            app:destination="@id/lecturamanga" />
+        <action
+            android:id="@+id/action_chainsawfragment_to_library"
+            app:destination="@id/library" />
+        <action
+            android:id="@+id/action_chainsawfragment_to_updates"
+            app:destination="@id/updates" />
+        <action
+            android:id="@+id/action_chainsawfragment_to_history"
+            app:destination="@id/history" />
+        <action
+            android:id="@+id/action_chainsawfragment_to_browse"
+            app:destination="@id/browse" />
+        <action
+            android:id="@+id/action_chainsawfragment_to_more"
+            app:destination="@id/more" />
+        <action
+            android:id="@+id/action_chainsawfragment_to_chainsawfragmentComents2"
+            app:destination="@id/chainsawfragmentComents" />
+        <action
+            android:id="@+id/action_chainsawfragment_to_chainsawfragmentComents3"
+            app:destination="@id/chainsawfragmentComents" />
+    </fragment>
+    <fragment
+        android:id="@+id/chainsawfragmentComents"
+        android:name="com.example.beereader.ChainsawfragmentComents"
+        android:label="fragment_chainsawfragmentcoments"
+        tools:layout="@layout/fragment_chainsawfragmentcoments" >
+        <action
+            android:id="@+id/action_chainsawfragmentComents_to_chainsawfragment"
+            app:destination="@id/chainsawfragment" />
+        <action
+            android:id="@+id/action_chainsawfragmentComents_to_library"
+            app:destination="@id/library" />
+        <action
+            android:id="@+id/action_chainsawfragmentComents_to_updates"
+            app:destination="@id/updates" />
+        <action
+            android:id="@+id/action_chainsawfragmentComents_to_history"
+            app:destination="@id/history" />
+        <action
+            android:id="@+id/action_chainsawfragmentComents_to_browse"
+            app:destination="@id/browse" />
+        <action
+            android:id="@+id/action_chainsawfragmentComents_to_more"
+            app:destination="@id/more" />
+    </fragment>
+    <fragment
+        android:id="@+id/lecturamanga"
+        android:name="com.example.beereader.lecturamanga"
+        android:label="fragment_lecturamanga"
+        tools:layout="@layout/fragment_lecturamanga" >
+        <action
+            android:id="@+id/action_lecturamanga_to_chainsawfragment"
+            app:destination="@id/chainsawfragment" />
+        <action
+            android:id="@+id/action_lecturamanga_to_lecturamanga2"
+            app:destination="@id/lecturamanga2" />
+    </fragment>
+    <fragment
+        android:id="@+id/lecturamanga2"
+        android:name="com.example.beereader.lecturamanga2"
+        android:label="fragment_lecturamangapag2"
+        tools:layout="@layout/fragment_lecturamangapag2" >
+        <action
+            android:id="@+id/action_lecturamanga2_to_lecturamanga"
+            app:destination="@id/lecturamanga" />
+        <action
+            android:id="@+id/action_lecturamanga2_to_lecturamanga3"
+            app:destination="@id/lecturamanga3" />
+        <action
+            android:id="@+id/action_lecturamanga2_to_chainsawfragment"
+            app:destination="@id/chainsawfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lecturamanga3"
+        android:name="com.example.beereader.lecturamanga3"
+        android:label="fragment_lecturamangapag3"
+        tools:layout="@layout/fragment_lecturamangapag3" >
+        <action
+            android:id="@+id/action_lecturamanga3_to_lecturamanga2"
+            app:destination="@id/lecturamanga2" />
+        <action
+            android:id="@+id/action_lecturamanga3_to_lecturamanga4"
+            app:destination="@id/lecturamanga4" />
+        <action
+            android:id="@+id/action_lecturamanga3_to_lecturamanga22"
+            app:destination="@id/lecturamanga2" />
+        <action
+            android:id="@+id/action_lecturamanga3_to_lecturamanga42"
+            app:destination="@id/lecturamanga4" />
+        <action
+            android:id="@+id/action_lecturamanga3_to_chainsawfragment"
+            app:destination="@id/chainsawfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lecturamanga4"
+        android:name="com.example.beereader.lecturamanga4"
+        android:label="fragment_lecturamangapag4"
+        tools:layout="@layout/fragment_lecturamangapag4" >
+        <action
+            android:id="@+id/action_lecturamanga4_to_lecturamanga3"
+            app:destination="@id/lecturamanga3" />
+        <action
+            android:id="@+id/action_lecturamanga4_to_lecturamanga5"
+            app:destination="@id/lecturamanga5" />
+        <action
+            android:id="@+id/action_lecturamanga4_to_chainsawfragment"
+            app:destination="@id/chainsawfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lecturamanga5"
+        android:name="com.example.beereader.lecturamanga5"
+        android:label="fragment_lecturamangapag5"
+        tools:layout="@layout/fragment_lecturamangapag5" >
+        <action
+            android:id="@+id/action_lecturamanga5_to_lecturamanga4"
+            app:destination="@id/lecturamanga4" />
+        <action
+            android:id="@+id/action_lecturamanga5_to_chainsawfragment"
+            app:destination="@id/chainsawfragment" />
+        <action
+            android:id="@+id/action_lecturamanga5_to_lecturamanga6"
+            app:destination="@id/lecturamanga6" />
+    </fragment>
+    <fragment
+        android:id="@+id/lecturamanga7"
+        android:name="com.example.beereader.lecturamanga7"
+        android:label="fragment_lecturamangapag7"
+        tools:layout="@layout/fragment_lecturamangapag7" >
+        <action
+            android:id="@+id/action_lecturamanga7_to_lecturamanga6"
+            app:destination="@id/lecturamanga6" />
+        <action
+            android:id="@+id/action_lecturamanga7_to_chainsawfragment"
+            app:destination="@id/chainsawfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lecturamanga6"
+        android:name="com.example.beereader.lecturamanga6"
+        android:label="fragment_lecturamangapag6"
+        tools:layout="@layout/fragment_lecturamangapag6" >
+        <action
+            android:id="@+id/action_lecturamanga6_to_lecturamanga5"
+            app:destination="@id/lecturamanga5" />
+        <action
+            android:id="@+id/action_lecturamanga6_to_chainsawfragment"
+            app:destination="@id/chainsawfragment" />
+        <action
+            android:id="@+id/action_lecturamanga6_to_lecturamanga7"
+            app:destination="@id/lecturamanga7" />
+    </fragment>
 </navigation>

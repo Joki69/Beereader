@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DBA00B"
-    tools:context=".lecturamanga4">
+    tools:context=".lecturamanga3">
 
 
     <TextView
@@ -50,13 +50,13 @@
         android:layout_weight="1"
         android:text="Anterior"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chapterNumberTextView"
         app:srcCompat="@drawable/reondaconflechanaranja" />
 
     <ImageView
-        android:id="@+id/nextButton"
+        android:id="@+id/nextButton3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="564dp"
@@ -70,14 +70,14 @@
         app:srcCompat="@drawable/reondaconflechanaranja" />
 
     <ImageView
-        android:id="@+id/previousButtonflecha"
+        android:id="@+id/previousButtonflecha3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="576dp"
         android:layout_weight="1"
         android:text="Anterior"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chapterNumberTextView"
         app:srcCompat="@drawable/flechanaranja" />
@@ -99,7 +99,7 @@
         app:srcCompat="@drawable/flechanaranja" />
 
     <ImageView
-        android:id="@+id/closeButton"
+        android:id="@+id/closeButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -110,16 +110,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/flechanaranja" />
 
-    <ImageView
+    <com.github.chrisbanes.photoview.PhotoView
         android:id="@+id/mangaframe"
         android:layout_width="387dp"
-        android:layout_height="667dp"
+        android:layout_height="550dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.703"
-        app:srcCompat="@drawable/cuatro" />
+        app:layout_constraintVertical_bias="0.552"
+        app:srcCompat="@drawable/tres" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
