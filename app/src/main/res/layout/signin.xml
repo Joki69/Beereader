@@ -27,7 +27,7 @@
         android:fontFamily="sans-serif-medium"
         android:text="BeeReader"
         android:textColor="#362703"
-        android:textSize="40dp"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.345"
         app:layout_constraintStart_toEndOf="@+id/imageView"

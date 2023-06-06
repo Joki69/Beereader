@@ -10,4 +10,9 @@
         android:name="com.example.beereader.WelcomePage"
         android:label="fragment_welcome_page"
         tools:layout="@layout/fragment_welcome_page" />
+    <activity
+        android:id="@+id/history"
+        android:name="com.example.beereader.History"
+        android:label="history"
+        tools:layout="@layout/history" />
 </navigation>
